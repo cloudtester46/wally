@@ -1,0 +1,9 @@
+- [x] Make the project folder
+- [x] Write this plan
+- [x] Make a simple browser game
+- [x] Let players tap where they think Wally is
+- [x] Give more points for closer taps
+- [x] Show the score and feedback after each tap
+- [x] Make it look fun and easy to use
+- [x] Get it ready to go live
+- [ ] Put it online

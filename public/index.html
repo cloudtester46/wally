@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Where's Wally?</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card">
+        <p class="eyebrow">Browser tapping game</p>
+        <h1>Where's Wally?</h1>
+        <p class="intro">Wally is hiding somewhere in the picture. Tap where you think he is. The closer you are, the more points you get.</p>
+
+        <div class="stats" aria-live="polite">
+          <div>
+            <span class="label">Score</span>
+            <strong id="score">0</strong>
+          </div>
+          <div>
+            <span class="label">Round</span>
+            <strong><span id="round">1</span>/5</strong>
+          </div>
+          <div>
+            <span class="label">Best tap</span>
+            <strong id="best">—</strong>
+          </div>
+        </div>
+
+        <button id="startButton" class="start-button">Start game</button>
+
+        <div id="gameArea" class="game-area" role="button" tabindex="0" aria-label="Tap the picture to guess where Wally is">
+          <div class="sky"></div>
+          <div class="crowd" aria-hidden="true"></div>
+          <div id="wally" class="wally" aria-hidden="true">
+            <span class="hat"></span>
+            <span class="head"></span>
+            <span class="shirt"></span>
+            <span class="legs"></span>
+          </div>
+          <div id="guessMarker" class="guess-marker" aria-hidden="true"></div>
+        </div>
+
+        <p id="message" class="message">Press start, then tap the picture.</p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
